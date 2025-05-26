@@ -13,11 +13,17 @@ import InfiniteMarquee from '@/components/InfiniteMarquee';
 const Index: React.FC = () => {
   const marqueeItems = [
     "🏆 ГТО - Командный Турнир 2025",
+    <img key="icon1" src="/datWhite.svg" alt="separator" style={{height: '20px', width: 'auto'}} />,
     "💪 Создай команду мечты",
+    <img key="icon2" src="/datWhite.svg" alt="separator" style={{height: '20px', width: 'auto'}} />,
     "🎯 Борись за призы до 1 000 000 ₽",
+    <img key="icon3" src="/datWhite.svg" alt="separator" style={{height: '20px', width: 'auto'}} />,
     "⚽ Мини-футбол и ГТО",
+    <img key="icon4" src="/datWhite.svg" alt="separator" style={{height: '20px', width: 'auto'}} />,
     "🔥 #СЛЁТ #МИР #ЛЕТО",
+    <img key="icon5" src="/datWhite.svg" alt="separator" style={{height: '20px', width: 'auto'}} />,
     "📅 31 мая 2025",
+    <img key="icon6" src="/datWhite.svg" alt="separator" style={{height: '20px', width: 'auto'}} />,
     "🏢 АО «НПП «МИР»"
   ];
 

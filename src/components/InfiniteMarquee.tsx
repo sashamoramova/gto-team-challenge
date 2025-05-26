@@ -2,7 +2,7 @@
 import React from 'react';
 
 interface InfiniteMarqueeProps {
-  items: string[];
+  items: (string | React.ReactElement)[];
   speed?: number; // скорость в секундах для полного цикла
   className?: string;
 }
@@ -15,7 +15,7 @@ const InfiniteMarquee: React.FC<InfiniteMarqueeProps> = ({
   return (
     <div className={`relative overflow-hidden whitespace-nowrap bg-mir text-white py-2 ${className}`}>
       <div 
-        className="inline-flex animate-marquee"
+        className="inline-flex animate-marquee items-center"
         style={{
           animationDuration: `${speed}s`,
         }}
@@ -24,7 +24,7 @@ const InfiniteMarquee: React.FC<InfiniteMarqueeProps> = ({
         {items.map((item, index) => (
           <span 
             key={`first-${index}`} 
-            className="mx-8 text-lg font-medium"
+            className="mx-8 text-lg font-medium flex items-center"
           >
             {item}
           </span>
@@ -34,7 +34,7 @@ const InfiniteMarquee: React.FC<InfiniteMarqueeProps> = ({
         {items.map((item, index) => (
           <span 
             key={`second-${index}`} 
-            className="mx-8 text-lg font-medium"
+            className="mx-8 text-lg font-medium flex items-center"
           >
             {item}
           </span>
