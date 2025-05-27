@@ -1,0 +1,255 @@
+
+.prizeFundSection {
+  position: relative;
+  background: linear-gradient(135deg, #ff5722 0%, #ff9800 50%, #ffc107 100%);
+  padding: 60px 20px;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.decorativeElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.shuttlecock {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  background: url('/shuttlecock.svg') center/contain no-repeat;
+  transform: rotate(-15deg);
+}
+
+.trophy {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 80px;
+  height: 80px;
+  background: url('/trophy.svg') center/contain no-repeat;
+}
+
+.sneaker {
+  position: absolute;
+  bottom: 30%;
+  left: 8%;
+  width: 120px;
+  height: 80px;
+  background: url('/sneaker.svg') center/contain no-repeat;
+  transform: rotate(10deg);
+}
+
+.ping_pong {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  width: 70px;
+  height: 70px;
+  background: url('/ping-pong.svg') center/contain no-repeat;
+}
+
+.prizeFundContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.prizeFundTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.prizesGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.trophyImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff5722, #ff9800);
+  border-radius: 15px;
+  padding: 40px;
+  min-height: 200px;
+}
+
+.trophyIcon {
+  font-size: 80px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.prizesInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prizeItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.placeNumber {
+  background: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.prizeText {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.personalScoreContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.personalScoreTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #d32f2f;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.personalScoreText {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.nominationsContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.nominationsTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nominationsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.nominationItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ff9800;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.nominationText {
+  font-size: 14px;
+}
+
+.nominationIcon {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9800;
+}
+
+.lastYearContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.lastYearTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d32f2f;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.lastYearTitle::before {
+  content: "↗";
+  color: #ff9800;
+  font-size: 40px;
+  position: absolute;
+  left: 20px;
+  top: 35px;
+}
+
+.lastYearText {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .prizesGrid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .nominationsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .prizeFundTitle,
+  .personalScoreTitle,
+  .nominationsTitle,
+  .lastYearTitle {
+    font-size: 24px;
+  }
+}
